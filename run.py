@@ -119,6 +119,10 @@ def calculate_stock_data(data):
 
 
 def get_stock_values(data):
+    """
+    Get the stock values with their respective headings.
+    returns a dictionary with stock predictions.
+    """
     headings = SHEET.worksheet("stock").row_values(1)
     print("Make the following numbers of sandwiches for next market:")
     stock_dict = {}
